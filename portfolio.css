@@ -76,7 +76,7 @@ img {
     margin-top: 25px;
 }
 
-.cadre, .cadre-1, .cadre-2 {
+.cadre, .cadre-1, .cadre-2, .email-button {
     padding: 10px;
     text-align: center;
     margin: auto;
@@ -99,13 +99,39 @@ img {
 }
 
 /* Email */
-.email {
-    color: #ffdbe2;
-    font-family: "Silkscreen";
+.email-button {
+    width: 25px;
+    height: 25px;
+    background-color: #ab886d;
 }
 
-.email:hover {
-    color: #fcfbf4;
+.email-button:hover .img-original {
+    display: none;
+}
+
+.email-button .img-hover {
+    display: none;
+    position: relative;
+}
+
+.email-button:hover .img-hover {
+    display: inline-block;
+}
+
+.img-hover {
+    width: 100%;
+}
+
+.img-original {
+    width: 100%;
+}
+
+.text-contact {
+    font-size: 25px;
+    font-weight: bold;
+    color: #AB886D;
+    font-family: "Pixelify Sans";
+    text-align: center;
 }
 
 /* Conteneur d'images */
@@ -172,6 +198,7 @@ iframe {
 /* Footer */
 footer {
     display: flex;
+    font-size: smaller;
     justify-content: center;
     align-items: center;
     text-align: center;
