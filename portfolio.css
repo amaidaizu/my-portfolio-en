@@ -1,10 +1,14 @@
-/* Corps de la page */
+/* =======================
+   Corps de la page
+   ======================= */
 body {
     padding: 25px;
     background-color: #fcfbf4;
 }
 
-/* Titre */
+/* =======================
+   Titres
+   ======================= */
 .title {
     color: #ffdbe2;
     font-family: "Silkscreen", serif;
@@ -12,7 +16,13 @@ body {
     text-align: center;
 }
 
-/* Menu de navigation */
+h2 {
+    text-align-last: center;
+}
+
+/* =======================
+   Menu de navigation
+   ======================= */
 .navbar {
     display: flex;
     background-color: #ffdbe2;
@@ -32,25 +42,21 @@ body {
     color: #ab886d;
 }
 
+.navbar a:hover {
+    color: #fcfbf4;
+}
+
 .navbar .cadre-lang a {
     text-decoration: none;
     padding-left: 5px;
     padding-right: 5px;
     font-family: "Silkscreen", serif;
-    color:  #ffdbe2;
+    color: #ffdbe2;
 }
 
-.navbar a:hover {
-    color: #fcfbf4;
-}
-
-
-/* Titres */
-h2 {
-    text-align-last: center;
-}
-
-/* Liens */
+/* =======================
+   Liens
+   ======================= */
 a {
     color: #ffdbe2;
     font-family: "Silkscreen", serif;
@@ -61,7 +67,9 @@ a:hover {
     color: #fcfbf4;
 }
 
-/* Paragraphes */
+/* =======================
+   Paragraphes
+   ======================= */
 p {
     font-family: Pixelify Sans, serif;
     line-height: 1.5;
@@ -70,13 +78,18 @@ p {
     margin-left: 20%;
 }
 
-/* Images */
+/* =======================
+   Images
+   ======================= */
 img {
     width: 150px;
     border-radius: 10px;
+    pointer-events: none;
 }
 
-/* Conteneurs */
+/* =======================
+   Conteneurs
+   ======================= */
 .container {
     display: flex;
     align-items: center;
@@ -85,7 +98,20 @@ img {
     margin-top: 25px;
 }
 
-.cadre, .cadre-1, .cadre-2, .email-button {
+.container-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* =======================
+   Cadres & boîtes
+   ======================= */
+.cadre,
+.cadre-1,
+.cadre-2,
+.email-button {
     padding: 10px;
     text-align: center;
     margin: auto;
@@ -111,13 +137,33 @@ img {
     width: 110px;
     background-color: rgba(171, 136, 109, 0.56);
     text-align: left;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
+    padding: 10px;
     border-radius: 10px;
 }
 
-/* Email */
+.box {
+    background-color: #ffdbe2;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-above {
+    font-size: 25px;
+    font-weight: bold;
+    color: #AB886D;
+    margin-bottom: 10px;
+    font-family: "Pixelify Sans";
+    text-align: center;
+}
+
+/* =======================
+   Email
+   ======================= */
 .email-button {
     width: 25px;
     height: 25px;
@@ -153,43 +199,9 @@ img {
     text-align: center;
 }
 
-/* Conteneur d'images */
-.container-1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-iframe {
-    border-radius: 10px;
-    display: block;
-    aspect-ratio: 16 / 9;
-    width: 100%;
-}
-
-/* Boîtes de contenu */
-.box {
-    background-color: #ffdbe2;
-    padding: 20px;
-    border-radius: 10px;
-    width: 100%;
-    max-width: 85%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.text-above {
-    font-size: 25px;
-    font-weight: bold;
-    color: #AB886D;
-    margin-bottom: 10px;
-    font-family: "Pixelify Sans";
-    text-align: center;
-}
-
-/* Conteneur d'images dans la boîte */
+/* =======================
+   Conteneurs d'images
+   ======================= */
 .images-container {
     display: flex;
     gap: 10px;
@@ -214,7 +226,19 @@ iframe {
     height: auto;
 }
 
-/* Footer */
+/* =======================
+   Iframe
+   ======================= */
+iframe {
+    border-radius: 10px;
+    display: block;
+    aspect-ratio: 16 / 9;
+    width: 100%;
+}
+
+/* =======================
+   Footer
+   ======================= */
 footer {
     display: flex;
     font-size: smaller;
